@@ -1,0 +1,7 @@
+// Vitest Snapshot v1
+
+exports[`Button > Button component renders correctly 1`] = `
+<button>
+  Button
+</button>
+`;
