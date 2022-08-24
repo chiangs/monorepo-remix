@@ -20,7 +20,8 @@
         "@vercel/node": "^2.4.4",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "ui": "*"
+        "ui": "*",
+        "ui-vite": "*"
     },
     "devDependencies": {
         "@remix-run/dev": "^1.6.8",

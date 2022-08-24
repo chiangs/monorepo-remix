@@ -20,18 +20,30 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.tsx
 var src_exports = {};
 __export(src_exports, {
-  Button: () => Button
+  Avatar: () => Avatar_default,
+  Button: () => Button_default
 });
 module.exports = __toCommonJS(src_exports);
 
-// src/Button.tsx
+// src/Avatar/index.tsx
 var import_jsx_runtime = require("react/jsx-runtime");
-var Button = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-    children: "Boop"
+var Avatar = (props) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+    children: "Avatar"
   });
 };
+var Avatar_default = Avatar;
+
+// src/Button/index.tsx
+var import_jsx_runtime = require("react/jsx-runtime");
+var Button = (props) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+    children: "Button"
+  });
+};
+var Button_default = Button;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
+  Avatar,
   Button
 });
