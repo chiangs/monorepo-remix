@@ -1,0 +1,9 @@
+node_modules
+yarn-lock.json
+.DS_STORE
+.idea
+
+.npmrc
+.env
+
+yarn-error.log

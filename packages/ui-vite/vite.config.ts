@@ -1,34 +1,34 @@
-import path from 'path';
+import path from "path";
 
-import { UserConfigExport } from 'vite';
-import dts from 'vite-plugin-dts';
+import { UserConfigExport } from "vite";
+import dts from "vite-plugin-dts";
 
 const getBaseViteConfig = (
-    dirname: string,
-    name: string,
-    override?: UserConfigExport
+  dirname: string,
+  name: string,
+  override?: UserConfigExport
 ): UserConfigExport => {
-    const isExternal = (id: string) =>
-        !id.startsWith('.') && !path.isAbsolute(id);
+  const isExternal = (id: string) =>
+    !id.startsWith(".") && !path.isAbsolute(id);
 
-    return {
-        esbuild: {
-            jsxInject: "import React from 'react'",
-        },
-        build: {
-            lib: {
-                entry: path.resolve(dirname, 'src/index.tsx'),
-                formats: ['es', 'umd'],
-                name: `${name}`,
-                fileName: (format) => `${name}.${format}.js`,
-            },
-            rollupOptions: {
-                external: isExternal,
-            },
-        },
-        plugins: [dts()],
-        ...override,
-    };
+  return {
+    esbuild: {
+      jsxInject: "import React from 'react'",
+    },
+    build: {
+      lib: {
+        entry: path.resolve(dirname, "src/index.tsx"),
+        formats: ["es", "umd"],
+        name: `${name}`,
+        fileName: (format) => `${name}.${format}.js`,
+      },
+      rollupOptions: {
+        external: isExternal,
+      },
+    },
+    plugins: [dts()],
+    ...override,
+  };
 };
 
-export default getBaseViteConfig(__dirname, 'ui-vite');
+export default getBaseViteConfig(__dirname, "ui-vite");

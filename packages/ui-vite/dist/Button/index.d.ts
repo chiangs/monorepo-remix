@@ -1,3 +1,5 @@
-declare type Props = {};
-declare const Button: (props: Props) => JSX.Element;
+declare type Props = {
+    children: any;
+};
+declare const Button: ({ children }: Props) => JSX.Element;
 export default Button;

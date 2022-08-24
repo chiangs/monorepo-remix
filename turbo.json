@@ -18,6 +18,9 @@
         "coverage": {
             "outputs": ["coverage/**"],
             "dependsOn": []
+        },
+        "storybook": {
+            "cache": false
         }
     }
 }

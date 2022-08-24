@@ -1,5 +1,5 @@
-import t from "react";
-const n = (o) => /* @__PURE__ */ t.createElement("button", null, "Button");
+import e from "react";
+const o = ({ children: t }) => /* @__PURE__ */ e.createElement("button", null, t);
 export {
-  n as Button
+  o as Button
 };

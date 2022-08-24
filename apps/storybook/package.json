@@ -1,0 +1,29 @@
+{
+    "name": "storybook",
+    "version": "1.0.0",
+    "description": "Documentation of components",
+    "main": "index.js",
+    "author": "chiangs",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "storybook": "start-storybook -p 6006",
+        "build-storybook": "build-storybook"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.18.13",
+        "@storybook/addon-actions": "^6.5.10",
+        "@storybook/addon-essentials": "^6.5.10",
+        "@storybook/addon-interactions": "^6.5.10",
+        "@storybook/addon-links": "^6.5.10",
+        "@storybook/builder-vite": "^0.2.2",
+        "@storybook/react": "^6.5.10",
+        "@storybook/testing-library": "^0.0.13",
+        "babel-loader": "^8.2.5",
+        "vite": "^3.0.9",
+        "tsconfig": "*"
+    },
+    "dependencies": {
+        "ui-vite": "*"
+    }
+}

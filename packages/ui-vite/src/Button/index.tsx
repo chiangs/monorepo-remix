@@ -1,7 +1,9 @@
-type Props = {};
+type Props = {
+    children: any;
+};
 
-const Button = (props: Props) => {
-    return <button>Button</button>;
+const Button = ({ children }: Props) => {
+    return <button>{children}</button>;
 };
 
 export default Button;
